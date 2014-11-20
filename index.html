@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <title>Youth Radio Interactive</title>
-  <meta name="viewport" content="width=device-width">
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -23,15 +22,15 @@ html, body{
 
 h1{
   font-family: 'Montserrat', sans-serif;
-  font-size: 110px;
-  line-height: 100px;
+  font-size: 8em;
+  line-height: 1em;
   letter-spacing: -10px;
 }
 
 h3{
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 60px;
+  font-size: 4em;
   letter-spacing: -5px;
   opacity: 0;
     -webkit-transition: all 500 ease;
@@ -41,22 +40,23 @@ h3{
 }
 
 p{
-  font-size: 29px;
+  font-size: 2em;
 }
 
 .accent{
   color: rgb(233, 114, 32);
 }
+
 .item{
   margin: 10px 10px;
-  width: 350px;
+  max-width: 100%;
   height: 200px;
 }
 
 .overlay{
   position: absolute;
-  width: 350px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
   background-color: rgba(233, 114, 32, 0);
   -webkit-transition: background-color 500ms ease;
@@ -76,6 +76,8 @@ p{
 .blog{
   color: black;
   opacity: 1;
+  width: 350px;
+  height: 100%;
 }
 
 #isotope{
@@ -83,6 +85,14 @@ p{
   margin: 0 auto;
 }
 
+@media (max-width: 765px){
+  h1{
+    font-size: 5em;
+  }
+  .description{
+    text-align: center;
+  }
+}
 </style>
 </head>
 <body>
@@ -91,7 +101,7 @@ p{
   <h1>Youth Radio <span class="accent">Interactive</span></h1>
 </div>
 <div class="row">
-  <div class="col-xs-12 text-justify">
+  <div class="col-xs-12 text-justify description">
     <p>Where young people combine programming and journalism to develop new tools, and tell dynamic stories about issues facing their environment and their community.</p>
   </div>
 </div>

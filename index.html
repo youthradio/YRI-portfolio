@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Youth Radio Interactive</title>
+  <meta name="viewport" content="width=device-width">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/isotope.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+<style>
+html, body{
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #5a5955;
+}
+
+.container-fluid{
+  background-color: white ;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 140px;
+  line-height: 100px;
+  letter-spacing: -21px;
+}
+
+h3{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  letter-spacing: -10px;
+  opacity: 0;
+    -webkit-transition: all 500 ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+p{
+  font-size: 29px;
+}
+
+.accent{
+  color: rgb(233, 114, 32);
+}
+.item{
+  margin: 10px 10px;
+  width: 350px;
+  height: 200px;
+}
+
+.overlay{
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  cursor: pointer;
+  background-color: rgba(233, 114, 32, 0);
+  -webkit-transition: background-color 500ms ease;
+  -moz-transition: background-color 500ms ease;
+  -o-transition: background-color 500ms ease;
+  transition: background-color 500ms ease;
+}
+
+.overlay:hover{
+  background-color: rgba(233, 114, 32, 1);
+}
+
+.overlay:hover h3{
+  opacity: 1;
+}
+
+
+
+#isotope{
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+</style>
+</head>
+<body>
+<div class="container-fluid ">
+<div class="page-header text-center">
+  <h1>Youth Radio <span class="accent">Interactive</span></h1>
+</div>
+<div class="row">
+  <div class="col-xs-12 text-justify">
+    <p>Where young people combine programming and journalism to develop new tools, and tell dynamic stories about issues facing their environment and their community.</p>
+  </div>
+</div>
+<hr>
+
+  <div id="isotope">
+    <div class="item">
+      <div class="overlay">
+        <h3>Know Your props</h3>
+      </div>
+      <img src="images/know-your-props.png">
+    </div>
+    <div class="item">
+      <div class="overlay">
+        <h3>Double Charged</h3>
+      </div>
+      <img src="images/double-charged.png">
+    </div>
+    <div class="item">
+      <div class="overlay">
+        <h3>Trick Or Treat</h3>
+      </div>
+      <img src="images/toxic_candy.png">
+    </div>
+    <div class="item">
+      <div class="overlay">
+        <h3>Lipstick Diaries</h3>
+      </div>
+      <img src="images/lip-diaries.jpg">
+    </div>
+    <div class="item">
+      <div class="overlay">
+        <h3>Forage City</h3>
+      </div>
+      <img src="images/forage_city.jpg">
+    </div>
+    <div class="item">
+      <div class="overlay">
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

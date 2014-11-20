@@ -4,7 +4,7 @@ $( function() {
     itemSelector: '.item',
     layoutMode: 'masonry',
     masonry: {
-      columnWidth: 10
+      gutter: 10
     }
   });
 if (Modernizr.touch) {

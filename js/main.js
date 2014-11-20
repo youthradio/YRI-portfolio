@@ -7,4 +7,8 @@ $( function() {
       columnWidth: 10
     }
   });
+if (Modernizr.touch) {
+  $(".overlay").addClass("overlay-no-touch")
+  $("h3").addClass("h3-no-touch")
+}
 })
